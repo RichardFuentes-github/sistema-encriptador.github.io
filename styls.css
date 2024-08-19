@@ -1,0 +1,486 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+* {
+padding: 0;
+margin: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background: #E9ECF8;
+}
+
+.logo{
+    position: relative;
+    top: 75px;
+    left: 75px;
+}
+.botonera{
+    width: 750px;
+    height: 75px;
+    top: 430px;
+    left: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.botoneraEcriptador{
+    width: 328px;
+    height: 67px;
+    float: left;
+    background-color:#E9ECF8;
+    text-align: center;
+    line-height: 67px;
+    border-radius: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.botoneraDesencriptador{
+    width: 328px;
+    height: 67px;
+    float: right;
+    background-color:#0A3871;
+    text-align: center;
+    line-height: 67px;
+    border-radius: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.Btn1{
+    padding: 22px 135px;
+    text-decoration: none;
+    color:#ffffff;
+    background: #0A3871;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: large;
+
+}
+.Btn1:hover{
+    background: #3f88e0;
+}
+.Btn1:active{
+    background: #0A3871;
+}
+.botoneraEcriptador:hover{
+    background: #3f88e0;
+}
+
+
+.Btn2{
+    width: 328px;
+    height: 67px;
+    text-decoration: none;
+    color:#0A3871;
+    background: #E9ECF8;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+}
+
+.Btn2:hover{
+    background:#9bc1ee;
+}
+
+.Btn2:active{
+    background: #E9ECF8;
+}
+
+.botoneraDesencriptador{
+    background: #9bc1ee;
+}
+
+.Contenedor{
+    width: 1440px;
+    height: 1024px;
+    top: 70px;
+    left: 50px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+.Subcontenedor{
+    width: 1000px;
+    height: 944px;
+    overflow: hidden;
+}
+.textIngresado{
+    position: relative;
+    width: 900px;
+    height: 400px;
+    top: 150px;
+    left: 100px;
+    float: left;
+    fill: #0A3871;
+}
+
+.cajatexto{
+    width: 900px;
+    height: 400px;
+    border-radius: 5px;
+    line-height: 2;
+    overflow: auto;
+    border: none;
+    background-color: #E9ECF8;
+    color: #0A3871;
+    resize: none;
+    outline: none;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+.mensajeInformativo{
+    position: relative;
+    height:40px;
+    width: 500px;
+    top: 750px;
+    left: 100px;
+    text-align: left;
+    color:#0A3871;
+    font-family: "Inter", sans-serif;
+    font-size: small;
+    text-align: right;
+}
+
+.TextoInfo{
+    width: 500px;
+    height: 40px;
+
+}
+
+.TextoEnciptado{
+    position: relative;
+    top: -944px;
+    width: 400px;
+    height: 944px;
+    left: -20px;
+    background-color: rgb(252, 252, 252);
+    float: right;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px gray;
+}
+.botonCopiar{
+    position: relative;
+    width: 328px;
+    height: 67px;
+    top: 130px;
+    left: 40px;
+    text-align: center;
+    background: #ffffff;
+    border: #ffffff;
+    line-height: 67px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    display: none;
+}
+
+.Btn3{
+    padding: 22px 140px;
+    border-radius: 20px;
+    background: #ffffff;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    border: #0A3871;
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+    display: none;
+    font-size: large;
+}
+
+.Btn3:hover{
+    background-color: #9bc1ee;
+}
+
+.TextoDeAviso{
+    position: relative;
+    width: 336px;
+    height: 122px;
+    font-family: "Inter", sans-serif;
+    top: 250px;
+    left: 35px;
+    text-align: center;
+}
+
+.TextoAvisoResaltado{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 120%;
+    color: black;
+}
+
+.TextoAvisoNormal{
+    font-size: 16px;
+    text-align: 150%;
+    color: gray;
+}
+
+.gapTextoAviso{
+    font-size: 16px;
+}
+
+.Muñeco{
+    position: relative;
+    top: 200px;
+    left: 10px;
+}
+
+.Resultado{
+    position: relative;
+    width: 350px;
+    height: 700px;
+    top: 10px;
+    left: 35px;
+    inline-size: 350px;
+    font-family: "Inter", sans-serif;
+    display: none;
+    overflow: auto;
+    font-size: large;
+    color: rgb(85, 85, 85);
+    word-wrap: break-word;
+}
+
+.Resultado.p{
+    font-family: "Inter", sans-serif;
+    width: 350px;
+    inline-size: 350px;
+}
+
+@media (max-width:768px) and (min-width:375px){
+    .body{
+        height: 1174px;
+        width: 768px;
+    }
+    .Contenedor{
+        width: 100%;
+        left: -70px;
+        display:inline-block;
+        align-items: center;
+    }
+    .logo{
+        top: 30px;
+        height: 50px;
+        left: 20px;
+    }
+    .Subcontenedor{
+        width: 768px;
+        height: 500px;
+        align-items: center;
+    }
+    .textIngresado{
+        height: 300px;
+        width: 600px;
+        top: 0px;
+        font-size: large;
+    }
+    .cajatexto{
+        width: 600px;
+        font-size: 32px;
+    }
+    .botonera{
+        width:600px;
+        top: 100px;
+    }
+    .botoneraEcriptador{
+        width: 250px;
+        text-align: center;
+    }
+    .Btn1{
+        height: 67px;
+        padding-left: 80px;
+        width: 250px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 24px;
+    }
+    .botoneraDesencriptador{
+        width: 250px;
+        
+    }
+    .Btn2{
+        width: 250px;
+        font-size: 24px;
+    }
+    .mensajeInformativo{
+        top: 350px;
+        width: 400px;
+        height: 30px;
+        text-align: left;
+        align-items: start;
+    }
+    .TextoInfo{
+        width:400px ;
+        height: 30px;
+        font-size: 12px;
+        text-align: left;
+        align-items: start;
+    }
+    .TextoEnciptado{
+        height: 300px;
+        width: 600px;
+        top: 50px;
+        left: -50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .TextoDeAviso{
+        top: 50px;
+        left: 10px;
+        width: 550px;
+    }
+    .TextoAvisoResaltado{
+        padding: 22px;
+    }
+
+    .Resultado{
+        width: 550px;
+        height: 200px;
+        left: 10px;
+        font-size: 32px;
+    }
+    .botonCopiar{
+        width: 500px;
+        top: 10px;
+        left: 0px;
+    }
+    .Btn3{
+        width: 500px;
+        left: 10px;
+    }
+    .Muñeco{
+        display: none;
+    }
+
+}
+
+@media (max-width:375px) {
+    .body{
+        height: 933px;
+        width: 375px;
+    }
+    .logo{
+        top: 20px;
+        left: -15px;
+    }
+    .Contenedor{
+        top: 25px;
+        width: 375px;
+        height: 933px;
+        display:block;
+        left: 10px;
+    }
+    .Subcontenedor{
+        height:500px ;
+        width: 360px;
+    }
+    .textIngresado{
+        width: 250px;
+        height: 200px;
+        left: 0px;
+        top: 60px;
+    }
+    .botonera{
+        width: 250px;
+        height: 170px;
+        top: 100px;
+        display: inline-block;
+        left: 0px;
+        text-align: center;
+        align-items: center;
+    }
+    .botoneraEcriptador{
+        width: 200px;
+        height: 67px;
+        left: 0px;
+        padding: 10px;
+        background-color: #E9ECF8;
+    }
+    .Btn1{
+        padding: 22px 80px;
+        width: 220px;
+        height: 67px; 
+        font-size: 16px;
+        left: 0px;
+    }
+    .Btn1:hover{
+        background: #3f88e0;
+    }
+    .Btn1:active{
+        background: #0A3871;
+    }
+    .botoneraEcriptador:hover{
+        background:#E9ECF8;
+    }
+    .botoneraDesencriptador{
+        width: 260px;
+        height: 67px;
+        background-color: #E9ECF8;
+    }
+    .Btn2{
+        /*padding: 22px 80px;*/
+        width: 220px;
+        height: 67px;
+        font-size: 16px;
+        align-items: center;
+    }
+    .mensajeInformativo{
+        top: 270px;
+        width: 100px;
+        left:10px ;
+    }
+    .TextoInfo{
+        font-size: 12px;
+        width: 200px;
+        text-align: left;
+    }
+
+    .TextoEnciptado{
+        top: 20px;
+        height: 250px;
+        width: 250px;
+        left: -130px;
+    }
+    .Muñeco{
+        display: none;
+    }
+    .TextoDeAviso{
+        top: 50px;
+        width: 250px;
+        height:250px ;
+        font-size: 12px;
+        left: 25px;
+    }
+    .TextoAvisoResaltado{
+        font-size: 16px;
+        width: 200px;
+    }
+    .TextoAvisoNormal{
+        font-size: 14px;
+        width: 200px;
+    }
+    .Resultado{
+        width: 220px;
+        height: 150px;
+        font-size: 14px;
+        left: 15px;
+    }
+    .botonCopiar{
+        top:25px;
+        width: 200px;
+        height: 60px; 
+        font-size: 16px;
+        left: 25px;
+    }
+
+    .Btn3{
+        padding: 22px 80px;
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+    }
+}

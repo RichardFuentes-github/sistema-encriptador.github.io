@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styls.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo">
+        <img src="assets/Logo.png" alt="">
+    </div>
+
+    <div class="Contenedor">
+        <div class="Subcontenedor">
+            <div class="textIngresado">
+                <textarea type="text" class="cajatexto" placeholder="Ingrese el texto aquí" id="TextoOriginal" ></textarea>
+
+            </div>
+            <div class="mensajeInformativo">
+                <p class="TextoInfo">Usar solo minúsculas sin acento</p>
+                
+            </div>
+            <div class="botonera">
+                <div class="botoneraEcriptador">
+                <button class="Btn1" onclick="encriptar();">Encriptar</button>
+                </div>
+                <div class="botoneraDesencriptador">
+                <button class="Btn2" onclick="desecriptar();">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="TextoEnciptado">
+                <div class="Resultado" id="txtResultado">
+                    <p id="ResultProcess"></p>
+                </div>
+                <div class="Muñeco" id="imgMuñeco">
+                    <img src="assets/Muñeco.png" />
+                </div>
+            <div class="TextoDeAviso" id="txtAviso">
+                <p class="TextoAvisoResaltado">
+                    Ningún mensaje fue encontrado
+                </p>
+                <p class="TextoAvisoNormal">
+                    Ingresa el texto que desees encriptar o desencriptar
+                </p>
+            </div>
+            <div class="botonCopiar" id="cont-BtnCopiar">
+                <button class="Btn3" href="" id="btn-Copiar">Copiar</button>
+            </div>
+        </div>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
